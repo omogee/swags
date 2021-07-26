@@ -20,7 +20,7 @@ class App extends Component {
       email:this.state.email,
       password:this.state.password
     }
-    axios.post(`http://localhost:8000/login`, {data: JSON.stringify(data)})
+    axios.post(`https://swags.herokuapp.com//login`, {data: JSON.stringify(data)})
     .then(res => console.log(res.data))
     .catch(err => console.log(err)) 
   
