@@ -60,11 +60,11 @@ class App extends Component {
              <div style={{padding: "20px"}}>
                <form  onSubmit={this.Submit} method="post">
                  <small style={{fontSize:"15px"}}>Email</small><br/>
-                 <input type="text" onChange={this.Change} name="email" placeholder="Enter your email" style={{width: "100%",padding:"15px 0px 15px 15px",border:"2px solid rgba(140, 140, 140,0.6)",borderRadius:"5px"}} />
+                 <input type="text" onChange={this.Change} value={this.state.email} name="email" placeholder="Enter your email" style={{width: "100%",padding:"15px 0px 15px 15px",border:"2px solid rgba(140, 140, 140,0.6)",borderRadius:"5px"}} />
                  <br/>
                  <br/>
                  <small style={{fontSize:"15px"}}>Password</small><br/>
-                 <input type="password" onChange={this.Change} name="password" placeholder="Enter your password" style={{width: "100%",padding:"15px 0px 15px 15px",border:"2px solid rgba(140, 140, 140,0.6)",borderRadius:"5px"}} />
+                 <input type="password" value={this.state.password} onChange={this.Change} name="password" placeholder="Enter your password" style={{width: "100%",padding:"15px 0px 15px 15px",border:"2px solid rgba(140, 140, 140,0.6)",borderRadius:"5px"}} />
                  <br/>
                  <br/>
  <br/>
