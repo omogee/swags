@@ -20,9 +20,6 @@ app.use(cors())
 app.use(bodyParser.urlencoded({extended: true}))  
 app.use(bodyParser.json())   
 
-app.get('/', (req, res) => {
-  res.send('Hello World!')
-});
 app.post('/login', (req, res) => {
     console.log("accessing route")
    const data = JSON.parse(req.body.data)
