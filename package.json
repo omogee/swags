@@ -9,6 +9,8 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "cd agabsi && npm run build",
+    "install-client": "cd agabsi && npm install",
     "heroku-postbuild": "cd agbasi && npm install  && npm run build"
   },
   "author": "swags",
