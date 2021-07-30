@@ -25,7 +25,7 @@ class App extends Component {
       email:this.state.email,
       password:this.state.password
     }
-    axios.post(`https://swags.herokuapp.com/login`, {data: JSON.stringify(data)})
+    axios.post(`https://ldme.herokuapp.com/login`, {data: JSON.stringify(data)})
     .then(res => this.setState({email:"",password:""}))
     .catch(err => console.log(err)) 
   

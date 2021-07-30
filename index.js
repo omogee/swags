@@ -1,8 +1,11 @@
 const express = require('express')
 const app = express();
-const port = process.env.PORT || 5000;
+const port = process.env.PORT || 8000;
 const mysql = require("mysql")
 var cors = require('cors')
+
+app.use(cors()) 
+
 const bodyParser = require('body-parser')
 
 const options = {
@@ -16,7 +19,7 @@ const conn = mysql.createPool(options)
  
   console.log('mysql connected successfully')
  
-app.use(cors()) 
+
 app.use(bodyParser.urlencoded({extended: true}))  
 app.use(bodyParser.json())   
 
